@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto+Condensed&family=Roboto:ital,wght@0,400;0,500;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Unica+One&display=swap");
+
+.background {
+  background: url(../../assets/textureTwo.png);
+  background-position: center;
+  color: white;
+  padding: 4rem 4rem;
+}
+
+.title {
+  font-family: "Unica One", cursive;
+  text-transform: uppercase;
+  font-size: 3rem;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 4rem;
+  /* mars */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-family: 'open sans';
+}
+
+.logo {
+  width: 1rem;
+}
+
+.names {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 0.5rem;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.stars {
+  margin: 0.2rem 0;
+}
+
+.review {
+  width: 30%;
+  max-width: 400px;
+  margin: 1%;
+}
+
+.writing {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.controls {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.controls button {
+  color: white;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  border: 3px solid rgba(220, 194, 44, 0.58);
+  padding: 0.7rem 1.4rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  margin: 0 2rem;
+  background: transparent;
+}
+
+.controls button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(220, 194, 44, 0.58);
+  z-index: -1;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.3s ease-in-out;
+}
+
+.controls button:hover::before {
+  transform: scaleY(1);
+}
+
+@media screen and (max-width: 980px) {
+  .writing {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .review {
+    width: 44%;  /* Adjusting the width of each review to slightly less than half of the container width */
+    margin: 1% ;  /* Adjusting margin for spacing */
+  }
+
+
+
+  .review:nth-child(2) {
+    order: 3;
+    width: 100%;
+    margin-top: 1rem;
+    margin: auto;
+    /* justify-self: center; */
+  }
+
+  
+}
+
+@media screen and (max-width: 640px) {
+
+
+  .review {
+    width: 100%;
+    margin-bottom: 2rem;  /* Adjusting the width of each review to slightly less than half of the container width */
+  }
+
+  .container {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .writing {
+    font-size: 1rem;
+  }
+
+  .name {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .background {
+
+    padding: 4rem 2rem;
+  }
+  
+  .controls button {
+    font-size: 1rem;
+    padding: 0.6rem 0.9rem;
+  }
+
+
+  
+}
+
+@media screen and (max-width: 530px) {
+  .controls {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .background {
+
+    padding: 4rem 1rem;
+  }
+}

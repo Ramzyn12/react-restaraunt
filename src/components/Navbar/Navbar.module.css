@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto+Condensed&family=Roboto:ital,wght@0,400;0,500;1,500&display=swap");
+/* font-family: 'Hind Siliguri', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Unica+One&display=swap");
+
+.logo {
+  width: 100px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navbar {
+  /* background-color: black; */
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 3rem 0.8rem 2.6rem;
+}
+
+.nav__links {
+  color: white;
+  flex: 1;
+  font-size: 1.1rem;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+.order__link-container {
+  text-decoration: none;
+}
+
+.order__link {
+  color: white;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  border: 3px solid rgba(220, 194, 44, 0.58);
+  padding: 0.3rem 0.7rem;
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+}
+
+.order__link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(220, 194, 44, 0.58);
+  z-index: -1;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.3s ease-in-out;
+}
+
+.order__link:hover::before {
+  transform: scaleY(1);
+}
+.nav__link {
+  margin-left: 1.5rem;
+  letter-spacing: 2px;
+  position: relative;
+  cursor: pointer;
+  /* transition: all 0.6s ease-in-out; */
+}
+
+.nav__link::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: white;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.1s ease-in-out;
+}
+
+.nav__link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.nav__link a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.nav__link a.active {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 3px;
+}
+
+.blackBackground {
+  background-color: rgb(12, 12, 12);
+}
+
+.hamburger {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  color: #f7f5f5; /* You can adjust the color to match your design */
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.small-screen-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 5; /* Ensure it's above other elements */
+}
+
+.small-screen-links {
+  list-style: none;
+  font-size: 2rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  /* Add other styling as needed */
+}
+
+.small-screen-links .nav__link {
+  margin: 0;
+  margin-bottom: 1rem;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  /* padding: 0; */
+  /* display: flex;
+  align-items: center; */
+}
+
+.exit {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 2.5rem; 
+  color: #f7f5f5; 
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.order__link-small-screen {
+  display: none;
+  text-decoration: inherit;
+}
+
+.iconsContainer {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.iconsContainer a {
+  color: inherit;
+}
+
+.iconsContainer .iconEl {
+  font-size: 3.5rem;
+  font-size: 2.5rem;
+
+}
+
+@media screen and (max-width: 1000px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav__links {
+    display: none;
+  }
+
+  .small-screen-links .nav__link {
+    font-size: 2rem;
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .navbar {
+    padding: 0.8rem 1.8rem 0.8rem 1.5rem;
+  }
+
+
+  .small-screen-links .nav__link {
+    font-size: 1.6rem;
+  }
+
+}
+
+@media screen and (max-width: 450px) {
+  .order__link-small-screen {
+    display: block;
+  }
+
+  .small-screen-links .nav__link {
+    /* margin-bottom: 1.5rem; */
+    font-size: 1.3rem;
+  }
+
+  .order__link-container {
+    display: none;
+  }
+
+  .navbar {
+    padding: 0.8rem 1.2rem 0.8rem 1rem;
+  }
+}

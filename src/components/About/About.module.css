@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto+Condensed&family=Roboto:ital,wght@0,400;0,500;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Unica+One&display=swap");
+
+.background {
+  background: url(../../assets/texture.png);
+  background-position: center;
+  /* display: flex; */
+
+  padding: 6rem 10rem;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 3rem;
+}
+
+
+
+.containerTwo {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.text-section {
+  width: 50%;
+}
+
+.basics-section {
+  width: 100%;
+}
+
+
+.subtitle {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: "Unica One", cursive;
+}
+
+.title {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-family: "Unica One", cursive;
+}
+
+.description {
+  font-size:1.6rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.image-section {
+  width: 50%;
+  display: flex;
+  padding-top: 43px;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.containerTwo .image-section {
+  width: 50%;
+  display: flex;
+  padding-top: 43px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.image-section img {
+  width: 60%;
+  box-shadow: -1rem 1rem rgba(220, 194, 44);
+}
+
+.image-section .bibimbap {
+  width: 75%;
+  box-shadow: -1rem 1rem rgba(220, 194, 44);
+}
+
+@media screen and (max-width: 1250px) {
+  .background {
+    padding: 6rem 6rem;
+  }
+
+  .description {
+    font-size:1.4rem;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  .title {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .background {
+    padding: 6rem 4rem;
+  }
+  .title {
+    font-size: 3.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .description {
+    font-size:1.3rem;
+    font-family: "Open Sans", sans-serif;
+  }
+}
+
+@media (max-width: 860px) {
+  .background {
+    padding: 2rem 2rem;
+
+  }
+
+  .title {
+    text-align: center;
+  }
+  .container, .containerTwo {
+    flex-direction: column-reverse;
+    margin-top: 0;
+  }
+
+  .image-section, .text-section {
+    width: 100%;
+  }
+
+  .image-section {
+    /* align-items: stretch; */
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .containerTwo .image-section {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .image-section img {
+    width: 40%;
+  }
+
+  .image-section .bibimbap {
+    width: 50%;
+    margin-bottom: 2rem;
+  }
+
+  .containerTwo .image-section img {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 3rem; 
+  }
+
+  .subtitle {
+    margin-bottom: 0;
+  }
+
+}
+
+@media screen and (max-width: 550px) {
+  .containerTwo .image-section img {
+    width: 60%;
+  }
+
+  .image-section .bibimbap {
+    width: 60%;
+  }
+
+  .container:first-of-type .image-section {
+    display: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  
+}
+
+@media screen and (max-width: 500px) {
+  .title {
+    font-size: 2.5rem; 
+  }
+  .description {
+    font-size: 1.1rem; 
+  }
+  .background {
+    padding: 2rem 1rem;
+
+  }
+  .containerTwo .image-section {
+    margin-bottom: 3rem;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  .image-section img {
+    width: 60%;
+  }
+
+  .image-section .bibimbap {
+    width: 70%;
+  }
+}
+

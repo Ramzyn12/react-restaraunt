@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto+Condensed&family=Roboto:ital,wght@0,400;0,500;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Unica+One&display=swap");
+
+.background {
+  background: url(../../assets/texture.png);
+  /* background-position: center; */
+  /* overscroll-behavior: none; */
+  padding: 6rem 4rem;
+  /* display: flex; */
+  /* background-color: gold; */
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /* margin: auto; */
+}
+
+.container {
+  width: 80%;
+  /* background-color: red; */
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px;
+  height: 100%;
+    margin: auto;
+
+  /* overflow: visible; */
+}
+
+.title {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-family: "Unica One", cursive;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.imgWrapper {
+  /* overflow: hidden; */
+  width: 100%;
+  height: 100%;
+  /* border-radius: 0.5rem; */
+}
+
+.container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* border-radius: 0.5rem; */
+
+  /* transition: transform 0.4s ease-in-out; */
+}
+
+/* .imgWrapper:hover img {
+  transform: scale(1.2);
+} */
+
+.container .imgWrapper:nth-child(1),
+.container .imgWrapper:nth-child(2),
+.container .imgWrapper:nth-child(6),
+.container .imgWrapper:nth-child(7) {
+  grid-column: span 6;
+}
+
+.container .imgWrapper:nth-child(4) {
+  grid-column: span 5;
+}
+
+.container .imgWrapper:nth-child(5) {
+  grid-column: span 3;
+}
+.container .imgWrapper:nth-child(3) {
+  grid-column: span 4;
+}
+.container .imgWrapper:nth-child(9),
+.container .imgWrapper:nth-child(10),
+.container .imgWrapper:nth-child(8) {
+  grid-column: span 4;
+}
+
+
+@media screen and (max-width: 850px) {
+  .title {
+    font-size: 3rem;
+  }
+  .container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 2.5rem;
+    padding: 1rem 0;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .background {
+    padding: 5rem 1rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .title {
+    font-size: 2rem;
+  }
+
+ 
+}

@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto+Condensed&family=Roboto:ital,wght@0,400;0,500;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Unica+One&display=swap");
+
+.header {
+  position: relative;
+  background: url("../../assets/homeImage.jpeg");
+  min-height: 100svh;
+  /* pointer-events: none; */
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+ 
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7); /* Dark overlay with 50% transparency */
+}
+
+.overlay__content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.title {
+  font-family: "Unica One", cursive;
+  text-transform: uppercase;
+  font-size: 4rem;
+  color: rgb(255, 255, 255);
+  user-select: none;
+}
+.controls button {
+  color: white;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  border: 3px solid rgba(220, 194, 44, 0.58);
+  padding: 0.7rem 1.4rem;
+  position: relative;
+  overflow: hidden;
+  margin: 0 2rem;
+  background: transparent;
+}
+
+.controls button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(220, 194, 44, 0.58);
+  z-index: -1;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.3s ease-in-out;
+}
+
+.controls button:hover::before {
+  transform: scaleY(1);
+}
+
+.icon {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  animation: scroll 1s infinite ease-in-out;
+  cursor: pointer;
+}
+
+@keyframes scroll {
+  0% {
+    scale: 1;
+  }
+
+  50% {
+    scale: 1;
+  }
+
+  100% {
+    scale: 1;
+    bottom: 10px;
+  }
+}
+
+
+@media screen and (min-width: 541px) and (max-width: 850px) {
+  .header {
+    height: 60vh; /* Adjust as needed */
+  }
+  .title {
+    font-size: 3.2rem; /* Adjust as needed */
+  }
+
+  .controls button {
+    font-size: 1rem;
+    padding: 0.5rem 0.9rem;
+  }
+  /* Additional styling adjustments for tablets */
+}
+
+@media screen and (max-width: 540px) {
+  .controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .header {
+    background-size: auto;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .title {
+    font-size: 2.5rem;
+  }
+}

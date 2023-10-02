@@ -1,0 +1,18 @@
+.carousel-container {
+  width: 100%;
+}
+
+
+.carousel-item-padding-40-px img {
+  max-width: 96%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.control-prev {
+  left: 10px; 
+}
+
+.control-next {
+  right: 10px; 
+}

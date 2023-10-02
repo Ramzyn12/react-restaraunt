@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto+Condensed&family=Roboto:ital,wght@0,400;0,500;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Unica+One&display=swap");
+
+.background {
+  background: url(../../assets/textureTwo.png);
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  padding: 6rem 4rem;
+}
+
+.container {
+  width: 80%;
+  margin-top: 3rem;
+  color: rgba(220, 194, 44);
+  font-family: "open sans";
+}
+
+.course {
+  font-family: "Unica One", cursive;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.divider {
+  width: 100%;
+  background-color: rgba(220, 194, 44);
+  height: 1px;
+  margin-bottom: 3px;
+}
+
+@media screen and (max-width: 850px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .course {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .background {
+    padding: 6rem 1rem;
+  }
+}
