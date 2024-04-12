@@ -60,21 +60,23 @@ const HomeHeader = () => {
                 View Menu
               </motion.button>
             </Link>
-            <a
+            {/* <a
               href="https://www.ubereats.com/gb/store/gangnam-restaurant/KJFRpwc5QoKrI65vQ4v9-g?diningMode=PICKUP&utm_campaign=place-action-link&utm_medium=organic&utm_source=google"
               target="_blank"
               rel="noopener noreferrer"
-            >
+            > */}
+            <Link to={"./news"}>
               <motion.button
                 variants={buttonVariants}
                 custom={100}
                 initial="hidden"
                 animate="visible"
                 transition={{ delay: 0.7 }}
-              >
-                Order Now
+                >
+                Gangnam News
               </motion.button>
-            </a>
+                </Link>
+            {/* </a> */}
           </div>
         </div>
         {showArrow && (

@@ -6,7 +6,7 @@ import PhotoGallery from "../../components/PhotoGallery/PhotoGallery";
 // import { Element } from "react-scroll";
 import { useEffect } from "react";
 import { Helmet } from "react-helmet";
-
+import Product from "../Product/Product";
 const Home = () => {
   useEffect(() => {
     if (window.location.hash === "#about-section") {
@@ -39,6 +39,7 @@ const Home = () => {
         />
       </Helmet>
       <HomeHeader />
+
       <About />
       <Reviews />
       <PhotoGallery />

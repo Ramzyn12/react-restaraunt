@@ -81,32 +81,32 @@ const Menu = () => {
       title: "Mains",
       meals: [
         {
-          name: "Beef (So)",
+          name: "So Bulgogi (Beef)",
           price: "£11.00",
           description:
-            "Rice wine with soy, garlic, pear, sugar and sesame oil.",
+            "Stir fried lean beef mixed in with vegetables. Served in a sizzling plate.",
         },
         {
-          name: "Duck (Oh Ri)",
+          name: "Oh Ri Bulgogi (Duck)",
           price: "£12.00",
           description:
-            "Rice wine with chilli, soy, garlic, pear, sugar and sesame oil.",
+            "Stir fried duck mixed in with vegetables. Served in a sizzling plate.",
         },
         {
-          name: "Pork (Dae Gi)",
+          name: "Dae Gi Bulgogi (Pork)",
           price: "£11.00",
           description:
-            "Rice wine with chilli, soy, garlic, pear, sugar and sesame oil.",
+            "Stir fried pork mixed in with sweet chilli sauce and vegetables, served in a sizzling plate.",
         },
         {
-          name: "Chicken (Dack)",
+          name: "Dack Bulgogi (Chicken)",
           price: "£11.00",
           description:
-            "Rice wine with soy, garlic, pear, sugar and sesame oil.",
+            "Stir fried chicken mixed in with vegetables, served in a sizzling plate.",
         },
         {
           name: "Seared Salmon",
-          price: "£9.50",
+          price: "£12.00",
           description:
             "Served with seasonal vegetables, asparagus and a slice of lemon",
         },
@@ -148,9 +148,15 @@ const Menu = () => {
         },
         {
           name: "Salmon Bibimbap",
-          price: "£11.00",
+          price: "£11.50",
           description:
             "Salmon & rice topped with Carrots, Courgettes, kale, Red + white Cabbage with Soy and Chilli Sauce.",
+        },
+        {
+          name: "Tofu Bibimbap",
+          price: "£10.50",
+          description:
+            "A rice bowl topped with crispy tofu, carrot, courgette, kale, and red & white cabbage, finished with a sprinkle of sesame, spring onion, gochujang and soy sauce.",
         },
         {
           name: "Japchae (Veg.)",
@@ -240,75 +246,134 @@ const Menu = () => {
       title: "Desserts",
       meals: [
         {
-          name: "Chocolate Mochi",
+          name: "Ice Cream Mochi - 2pcs",
           price: "£4.00",
-          description: "Gluten Rice Cake with Ice Cream. 2 pcs.",
+          description: "Chocolate, Vanilla or Green Tea",
         },
         {
           name: "Orange Chiffon Cake with Ice Cream",
           price: "£4.00",
           description: "",
         },
-        { name: "Chef's Special Dessert", price: "£5.00", description: "" },
+        { name: "Chef's Special Cake", price: "£5.00", description: "" },
       ],
     },
     {
       title: "Drinks",
       meals: [
-        { name: "Korean Rice Green Tea", price: "£2.50", description: "" },
-        { name: "Korean Red Ginseng Tea", price: "£3.00", description: "" },
+        { name: "Korean Rice Green Tea", price: "£2.75", description: "" },
+        { name: "Korean Ginseng Tea", price: "£3.00", description: "" },
         {
-          name: "Korean Cinnamon Juice - cold",
-          price: "£2.50",
+          name: "Korean Cinnamon Juice",
+          price: "£2.75",
           description: "",
         },
-        { name: "Korean Orange Juice - cold", price: "£2.50", description: "" },
-        { name: "Aloe Vera Juice", price: "£2.50", description: "" },
-        { name: "Coffee - white or black", price: "£2.50", description: "" },
-        { name: "English Tea", price: "£2.50", description: "" },
-        { name: "Still/Sparkling Water", price: "£2.00", description: "" },
-        { name: "Coca Cola Original/Diet", price: "£2.50", description: "" },
+        { name: "Korean Orange Juice", price: "£2.75", description: "" },
+        { name: "Korean Pear Juice", price: "£2.75", description: "" },
+        { name: "Aloe Vera Juice", price: "£2.75", description: "" },
+        { name: "Coffee - white or black", price: "£2.75", description: "" },
+        { name: "English Breakfast Tea", price: "£2.75", description: "" },
+        { name: "Still / Sparkling Water", price: "£2.50", description: "" },
+        { name: "Coke - Original or Diet", price: "£2.75", description: "" },
+        { name: "Lemonade (7-up)", price: "£2.75", description: "" },
         {
           name: "Bubble Tea",
           price: "£3.50",
           description:
-            "Naturally flavoured fruit powders mixed with semi skimmed milk. Bubble tea (Taro, Mango, Coconut, Honeydew Melon, Strawberry or Chocolate), with Pobbles (Strawberry, Lychee or Mango)",
+            "Naturally flavoured fruit powders mixed with semi skimmed milk. Bubble tea (Taro, Mango, Coconut, Honeydew Melon, Strawberry or Chocolate), with Pebbles (Strawberry, Lychee or Mango)",
         },
-        { name: "Kids Drink", price: "£1.50", description: "" },
+        { name: "Fruity Strawberry (330ml)", price: "£2.00", description: "" },
+        { name: "Fruity Orange (200ml)", price: "£1.50", description: "" },
         {
-          name: "Bek Se Ju - Korean traditional rice wine (13%)",
+          name: "Bek Se Ju - Korean Herbal Wine 13% (375ml)",
           price: "£13.50",
-          description: "Made of 12 different herbs",
+          description: "",
         },
         {
-          name: "So Ju - Korean traditional rice wine (20%)",
+          name: "Chamosul So Ju (Classic) - Korean Spirit (Vodka) 20.1% (350ml)",
           price: "£11.50",
-          description: "People's wine",
+          description: "",
         },
         {
-          name: "Hite or Cass Beer - Korean pale lager (4.5%)",
+          name: "Chamosul So Ju (Fresh) - Korean Spirit (Vodka) 16.9% (350ml)",
+          price: "£11.50",
+          description: "",
+        },
+        {
+          name: "Chamosul So Ju (Flavoured) - Korean Spirit (Vodka) 13% (350ml)",
+          price: "£11.50",
+          description:
+            "Choice of flavours: Grapefruit, Green Grape, Plum, Strawberry, Peach",
+        },
+        {
+          name: "Cass - Korean Pale Lager 4.5% (330ml)",
           price: "£4.00",
           description: "",
         },
-        { name: "Speckled Hen (5%)", price: "£4.00", description: "" },
-        { name: "Kronenbourg (5%)", price: "£4.00", description: "" },
+        { name: "Speckled Hen 4.8% (500ml)", price: "£4.50", description: "" },
+        { name: "Doom Bar 4.3% (500ml)", price: "£4.50", description: "" },
+        { name: "London Pride 4.7% (500ml)", price: "£4.50", description: "" },
+        { name: "Kronenbourg 5.0% (500ml)", price: "£4.50", description: "" },
         {
-          name: "House wine - Red 175ml (13%)",
-          price: "£4.00",
+          name: "Adnams Ghost Ship Pale Ale Alcohol Free 0.5% (330ml)",
+          price: "£3.50",
           description: "",
         },
-        { name: "House wine - Red 350ml ", price: "£7.70", description: "" },
-        { name: "House wine - Red 700ml ", price: "£14.80", description: "" },
         {
-          name: "House wine - White 175ml (13%)",
-          price: "£4.00",
+          name: "White House Wine 13% (175ml) - Glass",
+          price: "£4.50",
           description: "",
         },
-        { name: "House wine - White 350ml ", price: "£7.70", description: "" },
-        { name: "House wine - White 700ml ", price: "£14.80", description: "" },
-        { name: "Prosecco 750ml (11%)", price: "£16.50", description: "" },
-        { name: "Today's Champagne 750ml", price: "£25.00", description: "Please ask staff for details" },
-
+        {
+          name: "White House Wine 13% (350ml) - Glass",
+          price: "£8.00",
+          description: "",
+        },
+        {
+          name: "Mud House, Chile, Suavignon Blanc 12.5% (750ml) - Bottle",
+          price: "£19.00",
+          description: "",
+        },
+        {
+          name: "Oyster Bay, New Zealand, Sauvignon Blanc 13% (750ml) - Bottle",
+          price: "£22.00",
+          description: "",
+        },
+        {
+          name: "Red House Wine 13% (175ml) - Glass",
+          price: "£4.50",
+          description: "",
+        },
+        {
+          name: "Red House Wine 13% (350ml) - Glass",
+          price: "£8.00",
+          description: "",
+        },
+        {
+          name: "Casillero Del Diablo, Cabernet Sauvingon 13.5% (750ml) - Bottle",
+          price: "£19.00",
+          description: "",
+        },
+        {
+          name: "Campo Viejo, Rioja Tempranillo 13.5% (750ml) - Bottle",
+          price: "£19.00",
+          description: "",
+        },
+        {
+          name: "Yellow Tail, Australia, Shiraz 13.5% (750ml) - Bottle",
+          price: "£22.00",
+          description: "",
+        },
+        {
+          name: "Fiora Rosa, Italy, Pinot Grigio Rose 11.5% (750ml) - Bottle",
+          price: "£22.00",
+          description: "",
+        },
+        {
+          name: "Prosecco Spumante Extra Dry 10.5% (750ml) - Bottle",
+          price: "£19.00",
+          description: "",
+        },
       ],
     },
   ];
