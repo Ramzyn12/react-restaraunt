@@ -117,7 +117,7 @@ const Navbar = (props) => {
           <FontAwesomeIcon icon={faBars} />
         </button>
         <a
-          href="https://www.ubereats.com/gb/store/gangnam-restaurant/KJFRpwc5QoKrI65vQ4v9-g?diningMode=PICKUP&utm_campaign=place-action-link&utm_medium=organic&utm_source=google"
+          href="https://orders.gangnamstevenage.com/"
           className={classes["order__link-container"]}
           target="_blank"
           rel="noopener noreferrer"
@@ -203,7 +203,7 @@ const Navbar = (props) => {
               </li>
 
               <a
-                href="https://www.ubereats.com/gb/store/gangnam-restaurant/KJFRpwc5QoKrI65vQ4v9-g?diningMode=PICKUP&utm_campaign=place-action-link&utm_medium=organic&utm_source=google"
+                href="https://orders.gangnamstevenage.com/"
                 className={classes["order__link-small-screen"]}
                 target="_blank"
                 rel="noopener noreferrer"

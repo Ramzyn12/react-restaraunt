@@ -16,7 +16,7 @@ const PhotoGallery = () => {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://www.ubereats.com/gb/store/gangnam-restaurant/KJFRpwc5QoKrI65vQ4v9-g?diningMode=PICKUP&utm_campaign=place-action-link&utm_medium=organic&utm_source=google"
+          href="https://orders.gangnamstevenage.com/"
         >
           <button>Order Now</button>
         </a>
