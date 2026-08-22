@@ -46,9 +46,9 @@ const Contact = () => {
             <h3>get in touch</h3>
             <div className={classes.info}>
               <a href="tel:+441438747215"><FontAwesomeIcon icon={faPhone}/> 01438 747215</a>
-              <a href="mailto:gangnamstevenage@gmail.com">
+              <a href="mailto:gangnamuk@gmail.com">
                 <FontAwesomeIcon icon={faEnvelope}/>
-                gangnamstevenage@gmail.com
+                gangnamuk@gmail.com
               </a>
             </div>
           </div>
